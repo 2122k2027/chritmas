@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<title>Document</title>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Metamorphous&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@media screen and (min-width: 1024px) and (max-height: 1310px)
+{
+    body
+    {
+        background-color: rgb(228, 222, 191);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+    } 
+    nav ul li
+    {
+       padding: 0px 20px;
+       cursor:pointer;
+    }
+ 
+    main section h1
+    {
+        position: static;
+        margin-left: 38%;
+        margin-top: 2%; 
+        font-family: 'Trade Winds', cursive;
+    }
+    .layout
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }  
+     .layout img
+    {
+       position: relative;
+       width: 280px;
+       height: 280px;
+       padding: 20px;
+       margin-left: 45px;
+       border-radius: 50px;
+    
+    }
+    .layout img:nth-child(9)
+    {
+        display: none;
+    }
+    .layout img
+    {
+        animation: 1s animate linear infinite;
+    }
+    @keyframes animate
+     {
+       0%
+       {
+         transform: translateY(0px);
+       }    
+       30%
+       {
+         transform: translateY(-20px);
+       }    
+    }
+    .section3 .cristmas
+    {
+        position: static;
+        margin-left: 45%;
+        margin-top: 10%; 
+        font-family: 'Trade Winds', cursive;
+    }
+    .section3  p
+    {
+        margin-top: -7%;
+        margin-left: 2%;
+        padding: 10%; 
+        font-family: 'Montserrat', sans-serif
+    }
+    .section4 .merry
+    {
+        width: 90%;
+        height: 500px;
+        margin-top: -50px;
+        margin-left: 75px;
+        border-radius: 20px;
+    }
+    .section5 .xmassong
+    {
+        position: static;
+        margin-left: 45%;
+        margin-top: 7%; 
+        font-family: 'Trade Winds', cursive;
+    }
+    .section6
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section6 .icons
+    {
+        width: 15%;
+        height: 150px;
+        margin-top: 5%;
+       
+    }
+    .section8 .xmasvideo
+    {
+        position: static;
+        margin-left: 45%;
+        margin-top: 10%; 
+        font-family: 'Trade Winds', cursive;
+    }
+    .section9 iframe
+    {
+        margin-top: 5%;
+        margin-left: 17%;
+        width: 70%;
+        height: 500px;
+    }
+    footer .footer-img
+    {
+        width: 100%;
+        height: 200px;
+        margin-top: 10%;
+    }
+}
+
+
+
+
+                             /*Mobile view*/
+
+    @media screen and (min-width:320px) and (max-width:480px) 
+    
+    {
+    
+        body
+    {
+        background-color:beige;
+       
+    }  
+    ul li
+    {
+        background-color:transparent;
+        text-align: center;
+        border: 0.2px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    main section h1
+    {
+        margin-top: 20px;
+        font-size: 20px;
+        flex-grow: 1;
+        text-align: center;
+        font-family: 'Trade Winds', cursive;
+    }
+    .layout
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+     gap: 15px;
+     margin-top: 30px;
+     margin-left: 10px;
+        
+    }  
+     .layout img
+    {
+        width: 90%;
+        height: 120px;
+        border-radius: 10px;       
+    }
+    .layout img
+    {
+        animation: 1s animate linear infinite;
+    }
+    @keyframes animate
+     {
+       0%
+       {
+         transform: translateY(0px);
+       }    
+       30%
+       {
+         transform: translateY(-20px);
+       }    
+    }
+    .section3 .cristmas
+    {
+        margin-top: 15%;
+        font-size: 20px;
+        flex-grow: 1;
+        text-align: center;
+        font-family: 'Trade Winds', cursive;
+    }
+    .section3  p
+    {
+        margin-top: -7%;
+        margin-left: 2%;
+        padding: 10%; 
+    }
+    .section4 .merry
+    {
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+    }
+    .section5 .xmassong
+    {
+        margin-top: 13%;
+        font-size: 20px;
+        flex-grow: 1;
+        text-align: center;
+        font-family: 'Trade Winds', cursive;
+    }
+    .section6
+    {
+        display: grid;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 27%;
+    }
+    .section6 .icons
+    {
+        width: 30%;
+        height: 60px;
+        margin-top: 5%;
+       
+       
+    }
+    .section6 .icons:nth-child(3)
+    {
+        margin-left: 50%;
+        margin-top: 22%;
+    }
+    .section8 .xmasvideo
+    {
+        margin-top: 15%;
+        font-size: 20px;
+        flex-grow: 1;
+        text-align: center;
+        font-family: 'Trade Winds', cursive;
+    }
+    .section9 iframe
+    {
+        margin-top: 5%;
+        margin-left: 17%;
+        width: 70%;
+        height: 200px;
+        
+    }
+    footer .footer-img
+    {
+        width: 100%;
+        height: 100px;
+        margin-top: 10%;
+    }
+    }
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#">Christmas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupport" aria-controls="navbarsupport" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsupport">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">Home</li>
+                    <li class="nav-item ">About</li>
+                    <li class="nav-item">Service</li>
+                    <li class="nav-item">Contact</li>
+                </ul>
+            </div> 
+        </nav>
+    </header>
+<main>
+    <section>
+        <h1>Photo Collection</h1>
+    </section>
+    <section class="layout">
+        <img src="./5.jpeg" alt="">
+        <img src="./2 (2).jpg" alt="">
+        <img src="./2.jpg" alt="">
+        <img src="./3.jpeg" alt="">
+        <img src="./5.jpeg" alt="">
+        <img src="./5.jpg" alt="">
+        <img src="./6.jpeg" alt="">
+        <img src="./7.jpg" alt="">
+        <img src="./6.jpeg" alt="">
+    </section>
+    <section class="section3">
+        <h1 class="cristmas">X-Mas</h1>
+        <p>Christmas is, indeed, a magical festival that is all about sharing joy and happiness. For this reason, it is also my most favorite festival. Apart from the religious beliefs, the festival is known as sharing gifts with family as well as friends. The cute kids wait for the whole year to receive gifts from Santa.</p>
+    </section>
+    <section class="section4">
+            <img src="./merry.jpg" alt="" class="merry">
+    </section>
+    <section class="section5">
+       <h1 class="xmassong">X-Mas Song</h1>
+    </section>
+
+    <section class="section6">
+        <img src="./play.png" alt="" id="icon" onclick="myFunction()" class="icons">
+        <img src="./play.png" alt="" id="icon1" onclick="myFunction1()" class="icons">
+        <img src="./play.png" alt="" id="icon2" onclick="myFunction2()" class="icons">
+    </section>
+    <section class="section7">
+        <audio src="./carol_of_the_bells_whatsApp_status__Christmas_whatsApp_status__Christmas_lyrical_whatsApp_status(256k).mp3" id="song"></audio>
+        <audio src="./Merry_Christmas🎄🎅___Carol_Of_The_Bells_Song_🔔___Black_Screen_Whatsapp_Status_English___Lyrics_Video(128k).mp3" id="song2"></audio>
+        <audio src="./carol-of-the-bells-xmas-background-hip-hop-music-for-video-60-second-178242 (3).mp3" id="song3"></audio>
+    </section>
+    <section class="section8">
+        <h1 class="xmasvideo">
+            XmasVideo
+        </h1>
+    </section>
+    <section class="section9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lT6iMGq_voY?si=2dW6nTeZScsuzoSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+        </iframe>
+    </section>
+</main>
+<footer>
+    <img src="./footer.png" alt="" class="footer-img">
+</footer>
+</body>
+<script>
+    var icon = document.getElementById("icon");
+    var song = document.getElementById("song");
+    
+    function myFunction()
+    {
+       if (song.paused) 
+       {
+          song.play();
+          icon.src="./pause.png";
+       }
+       else
+       {
+         song.pause();
+         icon.src="./play.png";
+       }
+    }
+    var icon1 = document.getElementById("icon1");
+    var song1 = document.getElementById("song2");
+    
+    function myFunction1()
+    {
+       if (song1.paused) 
+       {
+          song1.play();
+          icon1.src="./pause.png";
+       }
+       else
+       {
+         song1.pause();
+         icon1.src="./play.png";
+       }
+    }
+    var icon2 = document.getElementById("icon2");
+    var song2 = document.getElementById("song3");
+    
+    function myFunction2()
+    {
+       if (song2.paused) 
+       {
+          song2.play();
+          icon2.src="./pause.png";
+       }
+       else
+       {
+         song2.pause();
+         icon2.src="./play.png";
+       }
+    }
+    
+</script>
+</html>
